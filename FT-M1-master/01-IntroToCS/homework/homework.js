@@ -47,8 +47,10 @@ function DecimalABinario(num) {
     }
   } while (!salir);
   
-  return cadenaBinaria
+  return cadenaBinaria;
 }
+
+
 
 module.exports = {
   BinarioADecimal,
