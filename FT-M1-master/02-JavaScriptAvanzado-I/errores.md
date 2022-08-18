@@ -4,7 +4,7 @@ Escribir programas que anden bien cuando todo funciona como esperabamos es un bu
 
 ## Tipos de Errores
 
-Mientras codeamos, o mientras ejecutamos nuestro programas pueden aparecer distintos tipos de errores en distintos momentos según quién causa el error, el tipo de error y cuando ocurre. Vamos a poder distinguir entre los siguientes tipos:
+Mientras codeamos, o mientras ejecutamos nuestros programas pueden aparecer distintos tipos de errores en distintos momentos según quién causa el error, el tipo de error y cuando ocurre. Vamos a poder distinguir entre los siguientes tipos:
 * __Errores de Sintaxis__: Se producen porque el programador no respeta las reglas sintácticas del lenguaje.
 * __Errores Semánticos__: Se dan por el mal uso de algún _Statement_ del lenguaje. ej: Loop infinito.
 * __Errores Lógicos__: Aparecen porque el código no realiza lo que esperabamos que haga.
@@ -15,7 +15,7 @@ Desde el punto de vista de _cuando_ surge el error, podemos tener:
 
 Según quien causa el error:
 * __Errores de Programación__: Es causado por un error del programador, por ejemplo: Utiliza mal una función y pasa argumentos incorrectos. Estos son los famosos `bugs`.
-* __Problemas Genuinos__: Escapa a las manos del programador y ocurren en programas que están bien codeados, por ejemplo, cunado un usuario ingresa un input que la función no esperaba o el servidor al que nos queríamos conectar está caído, etc...
+* __Problemas Genuinos__: Escapa a las manos del programador y ocurren en programas que están bien codeados, por ejemplo, cuando un usuario ingresa un input que la función no esperaba o el servidor al que nos queríamos conectar está caído, etc...
 
 Podemos intentar resolver estos problemas (o alertar que ocurren) usando algunas funciones conocidas del lenguaje, como hacer un console.log() con un mensaje, o retornar un valor extraño cuando ocurra un error (por ejemplo -1), etc... Pero todo esto sólo nos servirá para controlar algunos errores en ambientes semi controlados (yo mismo invoco las funciones que estoy armando, y voy a entender cómo manejar los errores). Para los demás errores, o cuando sucede algo extraño, queremos se frene la ejecución (o cambie de rumbo) y continuar en un lugar en donde se sepa como _manejar_ el error. Hacer esto, en varios lenguajes, es conocido como __manejo de excepciones__.
 
